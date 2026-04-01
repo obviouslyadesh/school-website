@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 
 export function Footer() {
   return (
@@ -64,21 +65,21 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <FaFacebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <FaInstagram size={20} />
               </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; 2024 School Name. All rights reserved.</p>
+          <p>&copy; 2026 School Name. All rights reserved.</p>
         </div>
       </div>
     </footer>

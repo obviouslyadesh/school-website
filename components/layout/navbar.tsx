@@ -31,7 +31,6 @@ const navItems = [
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [dropdownOpen, setDropdownOpen] = useState(false)
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -47,7 +46,7 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             {navItems.map((item) => (
-              <div key={item.name} className="relative">
+              <div key={item.name}>
                 {item.dropdown ? (
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
@@ -56,10 +55,10 @@ export function Navbar() {
                         <ChevronDown className="ml-1 h-4 w-4" />
                       </button>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-48">
+                    <DropdownMenuContent>
                       {item.dropdown.map((subItem) => (
                         <DropdownMenuItem key={subItem.name} asChild>
-                          <Link href={subItem.href} className="w-full">
+                          <Link href={subItem.href} className="w-full cursor-pointer">
                             {subItem.name}
                           </Link>
                         </DropdownMenuItem>
