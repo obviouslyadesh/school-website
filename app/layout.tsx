@@ -10,7 +10,7 @@ const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "School Name - Excellence in Education",
+  title: "Babal School | Excellence in Education",
   description: "Providing quality education for primary and secondary students",
 }
 
