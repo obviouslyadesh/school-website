@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'standalone',  // Important for Docker
+  images: {
+    domains: ['https://avvdcjpgunzxqbvfbivf.supabase.co'], // Add your Supabase URL
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig
